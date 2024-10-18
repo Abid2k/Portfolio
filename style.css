@@ -1,0 +1,396 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation Bar Styles */
+nav {
+    background: #007bff;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+/* Section Styling */
+section {
+    padding: 80px 20px; /* Added top padding for the fixed nav */
+    text-align: center;
+}
+
+/* Home/Introduction Styling */
+#home {
+    background: #007bff;
+    color: #fff;
+    padding: 60px 20px;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+}
+
+.intro p {
+    font-size: 1.2rem;
+}
+
+/* Resume Section Styling */
+#resume a {
+    /* color: #007bff; */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Projects Section Styling */
+.project-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-item {
+    width: 80%;
+    height:210px;
+    max-width: 500px;
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.pr2{
+    padding-top: 10px;
+}
+
+/* .project-item a {
+    color: #007bff;
+    text-decoration: underline;
+} */
+
+/* Skills Section Styling */
+#skills ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+#skills li {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for animation */
+}
+
+/* Animation on hover */
+#skills li:hover {
+    transform: scale(1.05); /* Slightly enlarge the item */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+
+/* Contact Section Styling */
+form input, form textarea, form button {
+    display: block;
+    width: 80%;
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Thank You Message */
+#thank-you-message {
+    margin-top: 20px;
+    color: #28a745;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .project-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+
+/* Resume Section Styling */
+#resume {
+    /* background: #f9f9f9; */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+/* Resume Card Styling */
+.resume-card {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Resume Button Styling */
+.resume-buttons {
+    margin-top: 20px;
+}
+
+.resume-button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 1rem;
+}
+
+.resume-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Icons for Buttons */
+.icon {
+    margin-right: 5px;
+}
+
+
+
+/* Social Links Card Styling */
+#social-links {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.social-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    transition: transform 0.3s;
+}
+
+.social-card:hover {
+    transform: translateY(-5px);
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.social-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.icon {
+    margin-right: 5px;
+}
+
+/* Dark Mode Styles */
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212; /* Dark background */
+    color: #f8f9fa; /* Light text color for general text */
+}
+
+body.dark-mode #social-links .social-card,
+body.dark-mode #resume .resume-card {
+    background-color: #343a40; /* Darker background for cards */
+    color: #f8f9fa; /* Light text color for card text */
+}
+
+body.dark-mode #social-links .social-button,
+body.dark-mode #resume .resume-button {
+    background-color: #007bff; /* Button background in dark mode */
+    color: #fff; /* Button text color */
+}
+
+/* Ensure links are visible */
+body.dark-mode a {
+    color: #00bfff; /* Bright link color */
+}
+
+
+section.dark-mode {
+    background-color: #1e1e1e; /* Darker section background */
+    color: #ffffff; /* Light text in sections */
+}
+
+#dark-mode-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000; /* Keep it above other content */
+}
+
+#dark-mode {
+    margin-left: 10px;
+}
+/* Projects Section Styles */
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+    justify-content: center; /* Center the cards */
+}
+
+.project-card {
+    background-color: #f9f9f9; /* Card background color */
+    border: 1px solid #ccc; /* Card border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Inner padding */
+    width: 300px; /* Card width */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition effects */
+    position: relative; /* Positioning for hover effect */
+}
+
+.project-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Deepen shadow on hover */
+}
+
+.project-card h3 {
+    margin-top: 0; /* Remove default margin */
+    font-size: 1.5em; /* Heading size */
+}
+
+.project-button {
+    display: inline-block; /* Button styling */
+    margin-top: 10px; /* Space above button */
+    padding: 10px 15px; /* Button padding */
+    background-color: #007bff; /* Button color */
+    color: #fff; /* Button text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded button corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Transition for background */
+}
+
+.project-button:hover {
+    background-color: #0056b3; /* Darken button color on hover */
+}
+
+/* Dark Mode Toggle Styling */
+.dark-mode-toggle {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    position: relative;
+}
+
+.dark-mode-toggle input[type="checkbox"] {
+    display: none; /* Hide the default checkbox */
+}
+
+.toggle-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: #007bff; /* Background color for the toggle */
+    border-radius: 25px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-icon {
+    margin-right: 10px; /* Space between the icon and text */
+}
+
+.toggle-text {
+    color: #fff; /* Text color */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Change background color when checkbox is checked */
+#dark-mode:checked + .toggle-label {
+    background-color: #343a40; /* Darker background for toggle when checked */
+}
+
+#dark-mode:checked + .toggle-label .toggle-text {
+    color: #f8f9fa; /* Change text color when dark mode is active */
+}
+
+.highlight {
+    font-size: 1.2em; /* Slightly smaller than the main heading */
+    font-weight: bold; /* Make it bold */
+    color: #6ca8e8; /* Use a color that stands out but is not overwhelming */
+    margin: 0.5em 0; /* Add some space above and below */
+    text-transform: uppercase; /* Make it uppercase for emphasis */
+}
+
+
+
