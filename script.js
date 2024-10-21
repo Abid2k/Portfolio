@@ -39,13 +39,4 @@ document.addEventListener("DOMContentLoaded", () => {
     // Call the function initially to reveal sections already in view on page load
     revealSection();
 
-    // Dark Mode Toggle
-    const toggle = document.getElementById('dark-mode');
-
-    toggle.addEventListener('change', () => {
-        document.body.classList.toggle('dark-mode');
-        sections.forEach(section => {
-            section.classList.toggle('dark-mode');
-        });
-    });
 });

@@ -7,62 +7,81 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Dark Mode Toggle -->
-    <!-- Dark Mode Toggle -->
-    <div class="dark-mode-toggle">
-        <input type="checkbox" id="dark-mode">
-        <label for="dark-mode" class="toggle-label">
-            <span class="toggle-icon">🌙</span>
-            <span class="toggle-text">Dark Mode</span>
-        </label>
-    </div>
-    <!-- Home/Introduction Section -->
+
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#social-links">Contact</a></li>
+        </ul>
+    </nav>
+<!-- Home/Introduction Section -->
     <section id="home">
         <div class="intro">
-            <h1>Hello I'm Abid A</h1>
-            <h6 class="highlight">Machine Learning Engineer</h6>
-            <p>Driven and Aspirational Machine Learning Engineer with advanced expertise in machine learning, deep
-                learning, natural language processing, and language learning management. Committed to leveraging technical
-                expertise and analytical skills to drive impactful real-world ML initiatives.
-                </p>
+            <h1 class="animate-text">Hello, I'm Abid A</h1>
+            <h6 class="highlight animate-text">Machine Learning Engineer</h6>
         </div>
     </section>
 
-    <!-- Social Links Card -->
-    <section id="social-links">
-        <div class="social-card">
-            <h2>Connect with Me</h2>
-            <p>Feel free to reach out through any of the platforms below!</p>
-            <div class="social-buttons">
-                <a href="https://github.com/Abid2k" target="_blank" class="social-button">
-                    <span class="icon">🐱‍💻</span> GitHub
-                </a>
-                <a href="https://www.linkedin.com/in/abid002" target="_blank" class="social-button">
-                    <span class="icon">🔗</span> LinkedIn
-                </a>
-                <a href="mailto:abid.hi2k@gmail.com" class="social-button">
-                    <span class="icon">📧</span> Email
-                </a>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-content">
+            <h2>About</h2>
+            <p>Hello🖐️! I'm <strong>Abid A</strong>, a self-taught Machine Learning Engineer with 1 year of hands-on experience solving diverse challenges in the world of machine learning. My journey has equipped me with a robust skill set in data analysis, cleaning, and preparation, ensuring models perform at their peak.</p>
+            
+            <p>Throughout my career, I've tackled a variety of problems head-on. One notable project involved fine-tuning Large Language Models (LLMs) like T4 and BERT, which resulted in enhanced accuracy and performance for natural language processing tasks. My ability to analyze and prepare data meticulously was crucial in achieving these results. Additionally, I've successfully collaborated with my team to deploy machine learning models in production environments, demonstrating my capability to translate theoretical models into real-world applications.</p>
+            
+            <p>I thrive on the challenge of transforming raw data into actionable insights and AI solutions that drive tangible outcomes. My motivation stems from a passion for uncovering hidden patterns and making sense of complex data. This drive is what propels me to continuously improve and innovate in the field of machine learning and data science.</p>
+
+            <a href="Abid_Resume.pdf" download class="download-cv">Download CV</a>
+        </div>
+    </section>
+
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2>Experience</h2>
+
+        <!-- Job 1: Associate Data Scientist -->
+        <div class="experience-item">
+            <div class="experience-left">
+                <h3>Associate Data Scientist</h3>
+                <p>Matt Engineering Solutions</p>
+                <p>April 2023 – Present | Nagercoil, Kanyakumari</p>
+            </div>
+            <div class="experience-right">
+                <ul>
+                    <li>Developed LLMs, Hybrid Models, and Graph Models: Designed, fine-tuned, and applied large language models (LLMs), hybrid models, transfer learning techniques, and graph-based neural networks (GNN, GCN, GAT) for solving academic research problems.</li>
+                    <li>Optimization and GANs: Created and optimized models using various hybrid optimization techniques, generative adversarial networks (GANs), and tools like TensorBoard for model visualization and Optuna for hyperparameter optimization, applied to academic use cases.</li>
+                    <li>End-to-End Project Handling: Managed the full project lifecycle from data cleaning and preprocessing to model training, testing, and evaluation using Python, TensorFlow, and PyTorch.</li>
+                    <li>Tools and Automation: Leveraged Power BI for in-depth analysis and visualization, used KNIME for comprehensive visual data analysis, performed web scraping for efficient data collection, and applied model development techniques in Jupyter Lab and Google Colab.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Job 2: Data Scientist Intern -->
+        <div class="experience-item">
+            <div class="experience-left">
+                <h3>Data Scientist Intern</h3>
+                <p>Matt Engineering Solutions</p>
+                <p>JAN 2023 – March 2023 | Nagercoil, Kanyakumari</p>
+            </div>
+            <div class="experience-right">
+                <ul>
+                    <li>Machine Learning Model Development: Designed, trained, and optimized machine learning models using TensorFlow, PyTorch, and Scikit-learn, applying optimization techniques like PSO and genetic algorithms.</li>
+                    <li>Data Analysis and Visualization: Proficient in analyzing large datasets with Pandas and NumPy, and visualizing insights using Plotly for machine learning tasks.</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <!-- Resume Section -->
-    <section id="resume">
-        <h2>Resume</h2>
-        <div class="resume-card">
-            <h3>My Professional Resume</h3>
-            <p>Click the buttons below to view or download my resume.</p>
-            <div class="resume-buttons">
-                <a href="Abid_Resume.pdf" target="_blank" class="resume-button view-button">
-                    <span class="icon">👁️</span> View Resume
-                </a>
-                <a href="Abid_Resume.pdf" download class="resume-button download-button">
-                    <span class="icon">⬇️</span> Download Resume
-                </a>
-            </div>
-        </div>
-    </section>
+
+
+ 
+
 
     <!-- Projects Section -->
     <!-- Projects Section -->
@@ -123,14 +142,23 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form action="#" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+<!-- Contact Section -->
+    <section id="social-links">
+        <div class="social-card">
+            <h2>Connect with Me</h2>
+            <p>Feel free to reach out through any of the platforms below!</p>
+            <div class="social-buttons">
+                <a href="https://github.com/Abid2k" target="_blank" class="social-button">
+                    <span class="icon">🐱‍💻</span> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/abid002" target="_blank" class="social-button">
+                    <span class="icon">🔗</span> LinkedIn
+                </a>
+                <a href="mailto:abid.hi2k@gmail.com" class="social-button">
+                    <span class="icon">📧</span> Email
+                </a>
+            </div>
+        </div>
     </section>
 
     <script src="script.js"></script>
